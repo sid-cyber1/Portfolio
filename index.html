@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(207, 207, 207);
+            color: rgb(34, 40, 49);
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+            background-color: rgb(0, 173, 181);
+            ;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            padding: auto;
+        }
+
+        nav ul li {
+
+            list-style-type: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(238, 238, 238);
+        }
+
+        nav ul li a:hover {
+
+            color: rgb(255, 102, 0);
+            font-size: 1.04rem;
+        }
+
+        .left {
+            font-size: 2.2rem;
+        }
+
+        .first {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-bottom: 10vw;
+
+        }
+
+        .first>div {
+
+            width: 40%;
+
+        }
+
+        .leftsec {
+
+            font-size: 3rem;
+            margin: 50px 0;
+        }
+
+        .rightsec img {
+            width: 90%;
+
+
+        }
+
+        .blue {
+            color: rgb(255, 102, 0);
+        }
+
+        #element {
+            color: rgb(255, 103, 0);
+        }
+
+        .footer {
+            display: flex;
+            background-color: rgb(34, 40, 49);
+            height: 300px;
+            padding: auto;
+            justify-content: space-evenly;
+        }
+
+        .sec-two {
+            max-width: 80vw;
+            margin: auto;
+
+        }
+
+        main hr {
+            border: 0;
+            background-color: rgb(57, 62, 70);
+            height: 1.5px;
+        }
+
+        .big {
+            width: 90%;
+
+        }
+
+
+        .sec-two {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding-top: 200px;
+            padding-bottom: 200px;
+
+            font-size: 1.25rem;
+
+        }
+
+        h1 {
+            padding: 50px;
+            text-justify: auto;
+        }
+
+        h3 {
+            color: rgb(238, 238, 238);
+            ;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Sid's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="about.html">About</a></li>
+                    <li> <a href="projects.html">Projects</a></li>
+                    <li> <a href="under_maintainance.html">Internships</a></li>
+                    <li> <a href="contact.html">Contact me </a></li>
+
+
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first">
+            <div class="leftsec">
+                Hii, My name is <span class="blue">Siddhesh</span>
+                <div>I am a passionate</div>
+                <!-- Element to contain animated typing -->
+                <span id="element"></span>
+            </div>
+
+
+            <div class="rightsec">
+                <img src="b1.png" alt="">
+            </div>
+
+        </section>
+
+        <hr>
+        <section class="sec-two">
+            <div class="big">
+                <img src="p1.png" height="500px">
+
+            </div>
+            <div class="small">
+                <h1>
+                    <p>Enthusiastic and motivated Computer Engineering graduate from Savitribai Phule Pune University,
+                        with a
+                        solid foundation in software development and algorithms.</p>
+                    <p>Skilled in web technologies and developing
+                        languages such as Java, C++ and Python, and experienced in project-based work through academic
+                        coursework
+                        and internships complemented by an approach to learning and adapting to new technologies.</p>
+                </h1>
+
+            </div>
+
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: [' C++ Programmer', 'Web Developer', 'Python Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+    <div class="footer">
+        <iframe src="fot.html" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+    </div>
+    
+</body>
+
+</html>

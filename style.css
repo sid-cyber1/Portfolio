@@ -1,0 +1,124 @@
+@import url('https://font.googleapis.com/css2?faamily=Poppins:wght@300;400;500;600&display=swap');
+
+
+* {
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif;
+}
+body{
+    background-color: aqua;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .slide-content{
+        margin:0 40px
+
+    }
+    .slide-container{
+        max-width: 1120px;
+        width: 100%;
+        background-color:black;
+        padding: 40px 0;
+    }
+    .img-content,
+    .card-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 14px;
+    }
+
+    .img-content{
+        row-gap: 5px;
+        position: relative;
+        padding: 25px,0;
+        
+    }
+
+
+.card{
+    width: 320px;
+    border-radius: 25px;
+    background-color: aquamarine;
+
+}
+.card-image{
+    position:relative;
+    height: 200px;
+    width: 200px;
+    border-radius:50%;
+    padding: 3px;
+    
+}
+
+.card-image .img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius:50%;
+    border: 4px solid #404040; 
+}
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.description{
+    font-size: 14px;
+    text-align: center;
+
+}
+
+.but{
+    border: none;
+    font-size: 16px;
+    color: aliceblue;
+    padding: 8px 16px;
+    background-color: blue;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3sec ease;
+
+
+}
+.but:hover{
+    background-color: bisque ;
+}
+
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: brown;
+    left:0;
+    top:0;
+    border-radius: 25px 25px 0 25px;
+
+
+}
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height:40px;
+    width: 40px;
+    background-color: brown;
+
+}
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: aquamarine;
+
+
+}
+
+
